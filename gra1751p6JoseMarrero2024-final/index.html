@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Travel Agency</title>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+</head>
+
+<body>
+	<section>
+		<div id="Tabs1">
+		  <ul>
+            <li><a href="#tabs-1">Flights</a></li>
+            <li><a href="#tabs-2">Hotels</a></li>
+            <li><a href="#tabs-3">Cars</a></li>
+		    <li><a href="#tabs-4">Bundles</a></li>
+	      </ul>
+          <div id="tabs-1">
+            <h2>Flights</h2>
+			  <table class="form">
+  <tbody>
+    <tr>
+      <td><div>
+        <p>All fields marked with an asteriks (*) are required.</p>
+        </div>
+        <form name="form" method="post" action="">
+          <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+          <input type="hidden" name="recipients" value="" />
+          <input type="hidden" name="subject" value="HTML5 Form" />
+          <table width="90%" border="0" align="center" cellpadding="6" cellspacing="0">
+            <tbody class="table">
+              <tr>
+                <td align="right">*Destination:</td>
+                <td><input name="textfield" type="text" required="required" class="textfield" placeholder="Destinatin" size="40"></td>
+                </tr>
+              <tr>
+                <td align="right">*From:</td>
+                <td><input name="textfield" type="text" required="required" class="textfield" placeholder="From" size="40"></td>
+                <td align="right">*To:</td>
+                <td><input name="textfield" type="text" required="required" class="textfield" placeholder="To" size="40"></td>
+				</tr>
+              <tr>
+                <td align="right">*Departure Date:</td>
+                <td><input name="textfield" type="date" required="required" class="datefield" placeholder="*MM/DD/YYYY" size="40"> </td>
+                <td align="right">*Return Date:</td>
+                <td><input name="textfield" type="date" required="required" class="datefield" placeholder="*MM/DD/YYYY" size="40"> </td>
+                </tr>
+              <tr>
+                <td align="right">*Number of Travelers:</td>
+               <td> <select class="selectfield" >
+					<option value="0">N/A</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				  </select></td>
+				  </tr>
+              <tr>
+                <td><input type="submit" name="submit" class="submit" value="Submit"></td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </td>
+      </tr>
+    </tbody>
+</table>
+          </div>
+          <div id="tabs-2">
+                 <h2>Hotels</h2>
+			  <table class="form">
+  <tbody>
+    <tr>
+      <td><div>
+        <p>All fields marked with an asteriks (*) are required.</p>
+        </div>
+        <form name="form" method="post" action="">
+          <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+          <input type="hidden" name="recipients" value="" />
+          <input type="hidden" name="subject" value="HTML5 Form" />
+          <table width="90%" border="0" align="center" cellpadding="6" cellspacing="0">
+            <tbody class="table">
+              <tr>
+                <td align="right">*Hotel:</td>
+                <td><input name="textfield" type="text" required="required" class="textfield" placeholder="Hotel" size="40"></td>
+                </tr>
+              <tr>
+                <td align="right">*Check-In:</td>
+                <td><input name="textfield" type="date" required="required" class="datefield" placeholder="*MM/DD/YYYY" size="40"> </td>
+                <td align="right">*Check-Out:</td>
+                <td><input name="textfield" type="date" required="required" class="datefield" placeholder="*MM/DD/YYYY" size="40"> </td>
+                </tr>
+              <tr>
+                <td align="right">*Number of Rooms:</td>
+               <td> <select class="selectfield" >
+					<option value="0">N/A</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				  </select></td>
+                <td align="right">*Number of People:</td>
+               <td> <select class="selectfield" >
+					<option value="0">N/A</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				  </select></td>
+				  </tr>
+				
+              <tr>
+                <td><input type="submit" name="submit" class="submit" value="Submit"></td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </td>
+      </tr>
+    </tbody>
+</table>     </div>
+          <div id="tabs-3">
+            <h2>Cars</h2>
+			  <table class="form">
+  <tbody>
+    <tr>
+      <td><div>
+        <p>All fields marked with an asteriks (*) are required.</p>
+        </div>
+        <form name="form" method="post" action="">
+          <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+          <input type="hidden" name="recipients" value="" />
+          <input type="hidden" name="subject" value="HTML5 Form" />
+          <table width="90%" border="0" align="center" cellpadding="6" cellspacing="0">
+            <tbody class="table">
+              <tr>
+                <td align="right">*Dealer:</td>
+                <td><input name="textfield" type="text" required="required" class="textfield" placeholder="Delear" size="40"></td>
+                <td align="right">*Model:</td>
+                <td><input name="textfield" type="text" required="required" class="textfield" placeholder="Model" size="40"></td>
+				</tr>
+              <tr>
+                <td align="right">*Pick-Up Date:</td>
+                <td><input name="textfield" type="date" required="required" class="datefield" placeholder="*MM/DD/YYYY" size="40"> </td>
+                <td align="right">*Drop-Off Date:</td>
+                <td><input name="textfield" type="date" required="required" class="datefield" placeholder="*MM/DD/YYYY" size="40"> </td>
+                </tr>
+              <tr>
+                <td><input type="submit" name="submit" class="submit" value="Submit"></td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </td>
+      </tr>
+    </tbody>
+</table>
+	      </div>
+		  <div id="tabs-4">
+            <h2>Bundles</h2>
+			  <table class="form">
+  <tbody>
+    <tr>
+      <td><div>
+        <p>All fields marked with an asteriks (*) are required.</p>
+        </div>
+        <form name="form" method="post" action="">
+          <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+          <input type="hidden" name="recipients" value="" />
+          <input type="hidden" name="subject" value="HTML5 Form" />
+          <table width="90%" border="0" align="center" cellpadding="6" cellspacing="0">
+            <tbody class="table">
+              <tr>
+                <td align="right">*Destination:</td>
+                <td><input name="textfield" type="text" required="required" class="textfield" placeholder="Destinatin" size="40"></td>
+                </tr>
+              <tr>
+                <td align="right">*From:</td>
+                <td><input name="textfield" type="text" required="required" class="textfield" placeholder="From" size="40"></td>
+                <td align="right">*To:</td>
+                <td><input name="textfield" type="text" required="required" class="textfield" placeholder="To" size="40"></td>
+				</tr>
+              <tr>
+                <td align="right">*Departure Date:</td>
+                <td><input name="textfield" type="date" required="required" class="datefield" placeholder="*MM/DD/YYYY" size="40"> </td>
+                <td align="right">*Return Date:</td>
+                <td><input name="textfield" type="date" required="required" class="datefield" placeholder="*MM/DD/YYYY" size="40"> </td>
+                </tr>
+              <tr>
+                <td align="right">*Adults:</td>
+               <td> <select class="selectfield">
+					<option value="0">N/A</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				  </select></td>
+                <td align="right">*Kids:</td>
+               <td> <select class="selectfield">
+					<option value="0">N/A</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				  </select></td>
+				  </tr>
+            <tr>
+                <td><input type="submit" name="submit" class="submit" value="Submit"></td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </td>
+      </tr>
+    </tbody>
+</table>
+	      </div>
+	  </div>
+
+	</section>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+@charset "utf-8";
+body {
+	margin: 0;
+	paddong: 0;
+	background: url("images/20181018_173304.jpg");
+	background-color: #FFF;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+nav{
+	
+}
+section {
+	width: 800px;
+	height: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	background-color: #FFFFFF;
+}
+#Tabs1 {
+	margin-top: 0px;
+	background-image: none;
+	border: none;
+	background-color: transparent;	
+}
+#Tabs1 ul {
+	border: none;
+	background-color: transparent;
+	background-image: none;
+	color: none;
+}
+#Tabs1 li {
+	background-image: none;
+	background-color: #A3D5FF;
+	text-align: center;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	border-radius: 5px;
+	border: solid #000000;
+	transition: background .2s ease-in;
+}
+#Tabs1 li:hover {
+	background-color: #008CFF;
+}
+#Tabs1  a {
+	color: #000;
+	font-family: "Segoe", "Segoe UI", "DejaVu Sans", "Trebuchet MS", "Verdana", "sans-serif";
+	font-style: normal;
+}
+#Tabs1  a:hover {
+	color: #fff;
+}
+.form {
+	
+}
+.textfield {
+	width: 200px;
+}
+.datefield {
+	width: 150px;
+}
+.selectfield {
+	width: 70px;
+}
