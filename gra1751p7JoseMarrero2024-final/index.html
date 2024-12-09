@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Santa's Workshop | Rewards Program</title>
+<script type="text/javascript">
+window.onload = function () {
+	document.getElementById("password1").onchange = validatePassword;
+	document.getElementById("password2").onchange = validatePassword;
+}
+function validatePassword(){
+var pass2=document.getElementById("password2").value;
+var pass1=document.getElementById("password1").value;
+if(pass1!=pass2)
+	document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+else
+	document.getElementById("password2").setCustomValidity('');	 
+//empty string means no validation error
+}
+</script>
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header>
+		<h1>Santa's Workshop</h1>	
+	</header>
+	<content>
+	<h2>Rewards program</h2>
+		
+		
+		
+	  <table id="form">
+  <tbody>
+    <tr>
+      <td><div id="top-text">
+          <p>All fields marked with an asteriks (*) are required.</p>
+        </div>
+        <form id="form1" name="form1" method="post" action="confirm.html">
+          <input type="hidden" name="env_report" value="" />
+          <input type="hidden" name="recipients" value="" />
+          <input type="hidden" name="subject" value="HTML5 Form" />
+          <table width="100%" align="center" cellpadding="6" cellspacing="0">
+            <tbody>
+              <tr>
+                <td align="right">*First Name:</td>
+                <td><input name="textfield" type="text" required="required" id="textfield" placeholder="*First Name" title="Your first name is required" size="40"></td>
+              </tr>
+              <tr>
+                <td align="right">*Last Name:</td>
+                <td><input name="textfield2" type="text" required="required" id="textfield2" placeholder="*Last Name" title="Last name is required" size="40"></td>
+              </tr>
+              <tr>
+                <td align="right"><label for="email">*Email:</label></td>
+                <td><input name="email" type="email" required="required" id="email" placeholder="*Email@domain.com" title="Your email is required." size="40"></td>
+              </tr>
+              <tr>
+                <td align="right"><label for="email">*Confirm Email:</label></td>
+                <td><input name="email" type="email" required="required" id="confirmemail" placeholder="*Email@domain.com" title="Your email is required" size="40"></td>
+              </tr>
+              <tr>
+                <td align="right"><label for="phone">*Primary Phone:</label></td>
+                <td><input name="phone" type="phone" required="required" id="primaryphone" placeholder="*###-###-####" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" title="Your phone number is required" size="40"></td>
+              </tr>
+              <tr>
+                <td align="right"><label for="phone">Secondary Phone:</label></td>
+                <td><input name="phone" type="phone" required="false" id="secondarymphone" placeholder="###-###-####" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" size="40"></td>
+              </tr>
+              <tr>
+                <td align="right" valign="top"><label for="textarea">*DOB:</label></td>
+                <td><input name="dobtextfield" type="text" required="required" id="dobtextfield" placeholder="*MM/DD/YYYY" title="Your date of birth is required" size="40"></td>
+              </tr>
+              <tr>
+                <td align="right" valign="top"><label for="textarea">*Address:</label></td>
+                <td><input name="addresstextfield" type="text" required="required" id="addresstextfield" placeholder="*1111 W 11 Street" title="your address is required" size="40"></td>
+              </tr>
+              <tr>
+                <td align="right" valign="top"><label for="textarea">*State:</label></td>
+                <td><input name="statetextfield" type="text" required="required" id="statetextfield" placeholder="*State" title="Your State is required" size="40"></td>
+              </tr>
+              <tr>
+                <td align="right" valign="top"><label for="textarea">*City:</label></td>
+                <td><input name="citytextfield" type="text" required="required" id="citytextfield" placeholder="*City" title="Your city is required" size="40"></td>
+              </tr>
+              <tr>
+                <td align="right" valign="top"><label for="textarea">*Zip Code:</label></td>
+                <td><input name="zipcodetextfield" type="text" required="required" id="zipcodetextfield" placeholder="*11111" pattern="[0-9]{5}" title="Your zip code is required" size="40"></td>
+              </tr>
+              <tr>
+                <td align="right" valign="top"><label for="textarea">*Password:</label></td>
+                <td><input name="password1" type="password" required="required" id="passwordtextfield" placeholder="*Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" size="40"></td>
+              </tr>
+              <tr>
+                <td align="right" valign="top"><label for="textarea">*Confirm Password:</label></td>
+                <td><input name="password2" type="password" required="required" id="confirmpasswordtextfield" placeholder="*Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" size="40"></td>
+				  </tr>
+             <tr>
+               <td align="right" valign="top"><label>*I agree to the Terms and Conditions</label></td>
+				 <td><input name="termsandconditionstext" type="checkbox" required="required" id="termsandconditionstext"></td>
+			    </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" name="submit" id="submit" value="Submit"></td>
+              </tr>
+            </tbody>
+          </table>
+        </form></td>
+    </tr>
+  </tbody>
+</table>	
+	</content>
+	<footer>
+		<p id="footer_text">©2024, Jose C Marrero. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+	</footer>
+</body>
+</html>
