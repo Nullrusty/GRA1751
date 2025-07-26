@@ -1,5 +1,6 @@
 @charset "utf-8";
 body {
+	background-image: url("images/christmas_shop_pattern-300px.png");
 	background-color: #FFCDCD;
 }
 header {
