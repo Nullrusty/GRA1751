@@ -7,8 +7,22 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-nav{
-	
+header {
+  text-align: center;
+  padding: 50px, 0px;
+	margin: auto;
+  border-radius: 0px;
+  border: solid black;
+  width: 800px;
+  height: 200px;
+  background-color: #A3D5FF;
+  align-content: center;
+}
+h1 {
+	font-size: 50px;
+	margin: auto;
+	font-family: "Century Schoolbook L";
+	color: #000;
 }
 section {
 	width: 800px;
@@ -67,16 +81,16 @@ section {
 	width: 70px;
 }
 footer {
-  text-align: center;
   padding: 50px, 0px;
-	margin-top: auto;
+	margin:auto;
   border-radius: 0px;
   border: solid black;
-  width: 100%;
+  width: 800px;
   height: 200px;
   background-color: #A3D5FF;
   align-content: center;
 }
 footer p {
+	margin: 50px;
 	text-align: center;
 }
